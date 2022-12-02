@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow
+
+name: "sql ini"
+
+on:
+  push: null
+
+permissions: {}
+
+jobs:
+  sql_ini:
+    runs-on: "ubuntu-latest"
+    steps:
+      - run: |
+          find /etc/mysql/ -type f | xargs -t -L1 -- cat
