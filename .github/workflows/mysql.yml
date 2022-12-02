@@ -12,4 +12,4 @@ jobs:
     runs-on: "ubuntu-latest"
     steps:
       - run: |
-          find /etc/mysql/ -type f | xargs -t -L1 -- cat
+          sudo find /etc/mysql/ -type f | sudo xargs -t -L1 -- cat
