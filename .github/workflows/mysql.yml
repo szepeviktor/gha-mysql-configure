@@ -4,6 +4,7 @@ name: "sql ini"
 
 on:
   push: null
+  workflow_dispatch: null
 
 permissions: {}
 
